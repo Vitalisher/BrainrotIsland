@@ -1,0 +1,3 @@
+﻿Build path: C:/MyUnityGames/OstrovBuild
+Build number: 10
+PluginYG version: 2.007

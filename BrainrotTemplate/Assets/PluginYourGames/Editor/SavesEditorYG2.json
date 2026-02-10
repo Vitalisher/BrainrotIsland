@@ -1,0 +1,57 @@
+{
+    "stringKeys": [],
+    "stringValues": [],
+    "floatKeys": [],
+    "floatValues": [],
+    "intKeys": [],
+    "intValues": [],
+    "idSave": 309,
+    "cups": 12,
+    "coins": 413,
+    "gems": 18,
+    "savesFaceId": 0,
+    "savesSkinId": 2,
+    "currentPetId": 0,
+    "skinSaves": [
+        {
+            "id": 1,
+            "isPurchase": true
+        },
+        {
+            "id": 4,
+            "isPurchase": true
+        },
+        {
+            "id": 2,
+            "isPurchase": true
+        },
+        {
+            "id": -1785932924,
+            "isPurchase": false
+        },
+        {
+            "id": 3,
+            "isPurchase": true
+        },
+        {
+            "id": 5,
+            "isPurchase": false
+        },
+        {
+            "id": 100,
+            "isPurchase": false
+        },
+        {
+            "id": 101,
+            "isPurchase": false
+        },
+        {
+            "id": 102,
+            "isPurchase": false
+        },
+        {
+            "id": 103,
+            "isPurchase": false
+        }
+    ]
+}
