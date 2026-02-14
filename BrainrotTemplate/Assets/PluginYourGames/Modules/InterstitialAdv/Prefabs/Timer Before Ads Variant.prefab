@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0440\u0435\u043A\u043B\u0430\u043C\u0430 \u0447\u0435\u0440\u0435\u0437"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b06ba09160cbc2c4b95d4dace2bdaaab, type: 2}
-  m_sharedMaterial: {fileID: -7045492043908121771, guid: b06ba09160cbc2c4b95d4dace2bdaaab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 88999bcf03b0fed419678d9470275fa5, type: 2}
+  m_sharedMaterial: {fileID: -3770707679987635534, guid: 88999bcf03b0fed419678d9470275fa5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -229,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 7914b9b0af6c50249902b256135be7ec, type: 3}
+      objectReference: {fileID: 12800000, guid: f5865d098240b8d4882b89bf72044246, type: 3}
     - target: {fileID: 8275278891031627965, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.48309594
@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 7914b9b0af6c50249902b256135be7ec, type: 3}
+      objectReference: {fileID: 12800000, guid: f5865d098240b8d4882b89bf72044246, type: 3}
     - target: {fileID: 8275278891352812731, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
       propertyPath: m_IsActive
       value: 0

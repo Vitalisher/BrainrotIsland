@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - YG.Insides.PlatformSettings
     Assembly-CSharp.dll:
     - AddCoins
+    - BallLightning
     - BotManager
     - BuyItem
     - Coin
@@ -302,115 +303,117 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16660}
+      Script: {instanceID: 16686}
     - Class: 114
-      Script: {instanceID: 16662}
+      Script: {instanceID: 16688}
     - Class: 114
       Script: {instanceID: 16690}
     - Class: 114
-      Script: {instanceID: 16692}
-    - Class: 114
       Script: {instanceID: 16694}
+    - Class: 114
+      Script: {instanceID: 16696}
     - Class: 114
       Script: {instanceID: 16698}
     - Class: 114
       Script: {instanceID: 16700}
     - Class: 114
-      Script: {instanceID: 16702}
+      Script: {instanceID: 16742}
     - Class: 114
-      Script: {instanceID: 16704}
+      Script: {instanceID: 16890}
     - Class: 114
-      Script: {instanceID: 16892}
+      Script: {instanceID: 17040}
     - Class: 114
-      Script: {instanceID: 17042}
+      Script: {instanceID: 17232}
     - Class: 114
-      Script: {instanceID: 17234}
+      Script: {instanceID: 17324}
     - Class: 114
-      Script: {instanceID: 17326}
+      Script: {instanceID: 17610}
     - Class: 114
-      Script: {instanceID: 17612}
+      Script: {instanceID: 17742}
     - Class: 114
-      Script: {instanceID: 17744}
+      Script: {instanceID: 17790}
     - Class: 114
-      Script: {instanceID: 17792}
+      Script: {instanceID: 17862}
     - Class: 114
-      Script: {instanceID: 17864}
+      Script: {instanceID: 17952}
     - Class: 114
-      Script: {instanceID: 17954}
+      Script: {instanceID: 18056}
     - Class: 114
-      Script: {instanceID: 18060}
+      Script: {instanceID: 18284}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18696}
     - Class: 114
-      Script: {instanceID: 18700}
+      Script: {instanceID: 18874}
     - Class: 114
-      Script: {instanceID: 18878}
+      Script: {instanceID: 19064}
     - Class: 114
-      Script: {instanceID: 19070}
+      Script: {instanceID: 19232}
     - Class: 114
-      Script: {instanceID: 19238}
+      Script: {instanceID: 19302}
     - Class: 114
-      Script: {instanceID: 19308}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 19392}
+      Script: {instanceID: 19480}
     - Class: 114
-      Script: {instanceID: 19486}
+      Script: {instanceID: 19674}
     - Class: 114
-      Script: {instanceID: 19680}
+      Script: {instanceID: 19740}
     - Class: 114
-      Script: {instanceID: 19746}
+      Script: {instanceID: 19884}
     - Class: 114
-      Script: {instanceID: 19890}
+      Script: {instanceID: 20002}
     - Class: 114
-      Script: {instanceID: 20008}
+      Script: {instanceID: 20156}
     - Class: 114
-      Script: {instanceID: 20162}
+      Script: {instanceID: 20216}
     - Class: 114
-      Script: {instanceID: 20222}
+      Script: {instanceID: 20270}
     - Class: 114
-      Script: {instanceID: 20276}
+      Script: {instanceID: 20342}
     - Class: 114
-      Script: {instanceID: 20348}
+      Script: {instanceID: 20634}
     - Class: 114
-      Script: {instanceID: 20640}
+      Script: {instanceID: 20674}
     - Class: 114
-      Script: {instanceID: 20680}
+      Script: {instanceID: 20906}
     - Class: 114
-      Script: {instanceID: 20912}
+      Script: {instanceID: 21094}
     - Class: 114
-      Script: {instanceID: 21100}
+      Script: {instanceID: 21170}
     - Class: 114
-      Script: {instanceID: 21176}
+      Script: {instanceID: 21264}
     - Class: 114
       Script: {instanceID: 21270}
     - Class: 114
-      Script: {instanceID: 21276}
+      Script: {instanceID: 21272}
     - Class: 114
-      Script: {instanceID: 21278}
+      Script: {instanceID: 21286}
     - Class: 114
-      Script: {instanceID: 21292}
+      Script: {instanceID: 21574}
     - Class: 114
-      Script: {instanceID: 21580}
+      Script: {instanceID: 21586}
     - Class: 114
       Script: {instanceID: 21592}
     - Class: 114
-      Script: {instanceID: 21620}
+      Script: {instanceID: 21616}
     - Class: 114
-      Script: {instanceID: 21892}
+      Script: {instanceID: 21888}
     - Class: 114
-      Script: {instanceID: 22028}
+      Script: {instanceID: 22024}
     - Class: 114
-      Script: {instanceID: 22366}
+      Script: {instanceID: 22362}
     - Class: 114
-      Script: {instanceID: 22454}
+      Script: {instanceID: 22450}
     - Class: 114
-      Script: {instanceID: 22526}
+      Script: {instanceID: 22522}
     - Class: 114
-      Script: {instanceID: 22602}
+      Script: {instanceID: 22598}
     - Class: 114
-      Script: {instanceID: 22684}
+      Script: {instanceID: 22680}
     - Class: 114
-      Script: {instanceID: 22950}
+      Script: {instanceID: 22946}
+    - Class: 114
+      Script: {instanceID: 26890}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -429,6 +432,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 208
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -446,34 +455,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 43459ff253a6a40a381d361730065154
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EnemyAI
-  - hash:
-      serializedVersion: 2
-      Hash: 38ac6efd015a4eaeea6caf0ce25fba8f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WaterRisingEvent
-  - hash:
-      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 1ab136900c0edaeeb49424c852595030
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: RawImage
-  - hash:
-      serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 1ab136900c0edaeeb49424c852595030
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: RawImage
   - hash:
       serializedVersion: 2
       Hash: 5ebc58ec194dd44630b25fcc270ad4af
@@ -510,6 +507,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 43459ff253a6a40a381d361730065154
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemyAI
   - hash:
       serializedVersion: 2
       Hash: f45600bcc886206dd55a3208474aad61
@@ -1364,6 +1367,12 @@ ScriptsOnlyBuild:
     className: CreationSpawns
   - hash:
       serializedVersion: 2
+      Hash: 38ac6efd015a4eaeea6caf0ce25fba8f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaterRisingEvent
+  - hash:
+      serializedVersion: 2
       Hash: d771b136f9925685ea061a12bf47cd9b
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1602,7 +1611,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 827f439c66fdf53f386934d686671269
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BallLightning
+  - hash:
+      serializedVersion: 2
+      Hash: 9b99df19986221498601b9a1736d026b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClickerEventSO
+  - hash:
+      serializedVersion: 2
+      Hash: 61614dfd45bfcc18ea34457ab7e11ef9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClickerEvent
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/MyUnityGames/OstrovBuild
+  playerPath: C:/MyUnityGames/BuildBrainrot

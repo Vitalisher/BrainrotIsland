@@ -56,9 +56,9 @@ MonoBehaviour:
   groundRayDistance: 1
   groundOffset: 1
   liftRadius: 20
-  pullForce: 16
-  liftForce: 16
-  maxLiftHeight: 20
+  pullForce: 18
+  liftForce: 18
+  maxLiftHeight: 22
   disableRadius: 10
   disableTime: 5
   damagePerSecond: 10

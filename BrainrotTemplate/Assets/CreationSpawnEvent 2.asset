@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bdc2a386f995446b8a97242bc14687, type: 3}
+  m_Name: CreationSpawnEvent 2
+  m_EditorClassIdentifier: 
+  eventNameRu: "\u0428\u0430\u0440\u043E\u0432\u0430\u044F \u043C\u043E\u043B\u043D\u0438\u044F"
+  eventNameEng: Ball lightning
+  eventNameTr: "K\xFCresel y\u0131ld\u0131r\u0131m"
+  duration: 70
+  zombiePrefab: {fileID: 4011910164038759650, guid: e24b41755af0aac42be82d0540add5c7, type: 3}
+  spawnRate: 1
+  maxZombies: 1
+  mapRadius: 50
+  raycastHeight: 50
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64

@@ -574,8 +574,6 @@
 "Assets/Values/UpDownAnimation.cs"
 "Assets/Water/WaterRising.cs"
 "Assets/Water/WaterRotation.cs"
-"Assets/Waves/WaveMovement.cs"
-"Assets/Waves/WaveSpawner.cs"
 -langversion:9.0
 /deterministic
 /optimize-
