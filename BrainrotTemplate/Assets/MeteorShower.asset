@@ -18,4 +18,4 @@ MonoBehaviour:
   eventNameTr: "Meteor ya\u011Fmuru"
   duration: 70
   meteorPrefab: {fileID: 9185502331211355445, guid: c627ea5a9138cb846b95b5594b0b239f, type: 3}
-  spawnRate: 2.2
+  spawnRate: 3.4

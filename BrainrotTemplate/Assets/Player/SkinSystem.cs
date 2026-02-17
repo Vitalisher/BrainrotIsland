@@ -8,18 +8,25 @@ public class Skin
 {
     public int id;
     public Material material;
+    public GameObject gameObject;
 }
 
 public class SkinSystem : MonoBehaviour
 {
     public List<Skin> faces;
     public List<Skin> skinColor;
+    public List<Skin> items;
 
     public SkinnedMeshRenderer playerFace;
     public SkinnedMeshRenderer playerSkin;
 
     private int currentFaceId;
     private int currentSkinId;
+
+    private int currentItemId;
+    private GameObject currentItem;
+
+    public Transform hatPos;
 
 
     public void ChangeFace(int id)
@@ -50,6 +57,24 @@ public class SkinSystem : MonoBehaviour
             }
         }
     }
+    
+    public void ChangeItem(int id)
+    {
+        foreach (var item in items)
+        {
+            if (item.id == id && currentItem != null)
+            {
+                return;
+            }
+
+            if (item.id == id)
+            {
+                currentItem = Instantiate(item.gameObject, hatPos);
+            }
+        }
+    }
+    
+    
 
     public void InitializeSkin()
     {

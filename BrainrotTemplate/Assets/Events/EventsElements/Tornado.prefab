@@ -53,16 +53,17 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  groundRayDistance: 1
-  groundOffset: 1
+  groundRayDistance: 30
+  groundOffset: 2
+  groundCheckDistance: 30
   liftRadius: 20
-  pullForce: 18
-  liftForce: 18
-  maxLiftHeight: 22
+  pullForce: 17
+  liftForce: 17
+  maxLiftHeight: 19
   disableRadius: 10
   disableTime: 5
   damagePerSecond: 10
-  damageRadius: 10
+  damageRadius: 12
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -119,6 +120,7 @@ MonoBehaviour:
     m_Bits: 64
   groundRayDistance: 50
   groundOffset: 0.1
+  groundCheckDistance: 5
   liftRadius: 20
   pullForce: 10
   liftForce: 5

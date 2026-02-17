@@ -1,1 +1,1 @@
-C:\MyUnityGames\BrainrotTemplate
+C:\MyUnityGames\Repository\BrainrotGit\BrainrotTemplate

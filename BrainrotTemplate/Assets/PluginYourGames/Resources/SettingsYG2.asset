@@ -145,7 +145,7 @@ MonoBehaviour:
     showFirstAdv: 1
     interAdvInterval: 120
     postponeCallByFail: 1
-    postponeCallTimer: 130
+    postponeCallTimer: 220
     labelAdvSimLabel: 0
   Leaderboards:
     enable: 1
@@ -375,6 +375,7 @@ MonoBehaviour:
     autoGRA: 1
     logInEditor: 1
     archivingBuild: 1
+    autoDefineSymbols: 1
     syncInitSDK: 0
     loadSceneIfSDKLate: 0
     loadSceneIndex: 0
@@ -383,7 +384,7 @@ MonoBehaviour:
   Simulation:
     device: 0
     language: ru
-    advIntervalSimulation: 120
+    advIntervalSimulation: 60
     durationAdv: 0.5
     loadAdv: 0
     testFailAds: 0

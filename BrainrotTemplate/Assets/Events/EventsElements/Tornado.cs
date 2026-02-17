@@ -5,28 +5,29 @@ using UnityEngine.AI;
 
 public class Tornado : MonoBehaviour
 {
-    [Header("��������")]
+    [Header("Движение")]
     public float moveSpeed = 3f;
     public float minMoveTime = 2f;
     public float maxMoveTime = 5f;
     public float rotationSpeed = 50f;
 
-    [Header("�����")]
+    [Header("Земля")]
     public LayerMask groundLayer;
     public float groundRayDistance = 50f;
     public float groundOffset = 0.1f;
+    public float groundCheckDistance = 5f; // Дистанция проверки земли впереди
 
-    [Header("������")]
+    [Header("Подъём")]
     public float liftRadius = 8f;
     public float pullForce = 10f;
     public float liftForce = 25f;
     public float maxLiftHeight = 20f;
 
-    [Header("����������")]
+    [Header("Отключение")]
     public float disableRadius = 3f;
     public float disableTime = 5f;
 
-    [Header("����")]
+    [Header("Урон")]
     public int damagePerSecond = 10;
     public float damageRadius = 3f;
 
@@ -62,10 +63,27 @@ public class Tornado : MonoBehaviour
         if (Time.time >= nextDirectionChangeTime)
             ChooseNewDirection();
 
-        Vector3 move = currentDirection * moveSpeed * Time.deltaTime;
-        move.y = 0f;
+        // Проверяем, есть ли земля впереди перед движением
+        Vector3 nextPosition = transform.position + currentDirection * moveSpeed * Time.deltaTime;
+        
+        if (IsGroundAhead(nextPosition))
+        {
+            Vector3 move = currentDirection * moveSpeed * Time.deltaTime;
+            move.y = 0f;
+            transform.position += move;
+        }
+        else
+        {
+            // Если земли нет впереди, сразу выбираем новое направление
+            ChooseNewDirection();
+        }
+    }
 
-        transform.position += move;
+    bool IsGroundAhead(Vector3 position)
+    {
+        // Проверяем наличие земли в следующей позиции
+        Ray ray = new Ray(position + Vector3.up * 5f, Vector3.down);
+        return Physics.Raycast(ray, groundRayDistance, groundLayer);
     }
 
     void StickToGround()
@@ -82,13 +100,30 @@ public class Tornado : MonoBehaviour
 
     void ChooseNewDirection()
     {
-        float angle = Random.Range(0f, 360f);
-        currentDirection = new Vector3(
-            Mathf.Cos(angle * Mathf.Deg2Rad),
-            0,
-            Mathf.Sin(angle * Mathf.Deg2Rad)
-        ).normalized;
+        int maxAttempts = 20; // Максимум попыток найти направление с землёй
+        
+        for (int i = 0; i < maxAttempts; i++)
+        {
+            float angle = Random.Range(0f, 360f);
+            Vector3 direction = new Vector3(
+                Mathf.Cos(angle * Mathf.Deg2Rad),
+                0,
+                Mathf.Sin(angle * Mathf.Deg2Rad)
+            ).normalized;
 
+            // Проверяем несколько точек по направлению
+            Vector3 checkPosition = transform.position + direction * groundCheckDistance;
+            
+            if (IsGroundAhead(checkPosition))
+            {
+                currentDirection = direction;
+                nextDirectionChangeTime = Time.time + Random.Range(minMoveTime, maxMoveTime);
+                return;
+            }
+        }
+
+        // Если не нашли направление с землёй, пробуем противоположное текущему
+        currentDirection = -currentDirection;
         nextDirectionChangeTime = Time.time + Random.Range(minMoveTime, maxMoveTime);
     }
 
@@ -208,5 +243,12 @@ public class Tornado : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, damageRadius);
+        
+        // Визуализация проверки земли
+        Gizmos.color = Color.green;
+        if (currentDirection != Vector3.zero)
+        {
+            Gizmos.DrawLine(transform.position, transform.position + currentDirection * groundCheckDistance);
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class Meteor : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Meteor : MonoBehaviour
 
     void Start()
     {
-        currentExplosion =  Mathf.Round(Random.Range(explosionRadiusMin, explosionRadiusMax));
+        currentExplosion = Mathf.Round(Random.Range(explosionRadiusMin, explosionRadiusMax));
 
         float x = Random.Range(-mapRadius, mapRadius);
         float z = Random.Range(-mapRadius, mapRadius);
@@ -84,12 +85,25 @@ public class Meteor : MonoBehaviour
             playerLayer
         );
 
+        // Используем HashSet для отслеживания уже повреждённых объектов
+        HashSet<GameObject> damagedObjects = new HashSet<GameObject>();
+
         foreach (Collider col in hits)
         {
-            ITakeDamage damageable = col.GetComponent<ITakeDamage>();
+            // Получаем корневой GameObject (на случай если коллайдер на дочернем объекте)
+            GameObject rootObject = col.attachedRigidbody != null 
+                ? col.attachedRigidbody.gameObject 
+                : col.gameObject;
+
+            // Пропускаем если уже нанесли урон этому объекту
+            if (damagedObjects.Contains(rootObject))
+                continue;
+
+            ITakeDamage damageable = rootObject.GetComponent<ITakeDamage>();
             if (damageable != null)
             {
                 damageable.TakeDamage(damage);
+                damagedObjects.Add(rootObject);
             }
         }
     }

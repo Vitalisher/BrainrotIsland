@@ -99,7 +99,6 @@
 -define:Storage_yg
 -define:PlayerStats_yg
 -define:Leaderboards_yg
--define:Localization_yg
 -define:Metrica_yg
 -define:Review_yg
 -define:StickyAdv_yg
@@ -118,6 +117,7 @@
 -define:Clipboard_yg
 -define:RU_YG2
 -define:Payments_yg
+-define:Localization_yg
 -define:NMC_CAN_ACCESS_TERRAIN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
