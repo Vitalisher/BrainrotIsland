@@ -5,13 +5,14 @@
     "floatValues": [],
     "intKeys": [],
     "intValues": [],
-    "idSave": 493,
+    "idSave": 640,
     "cups": 14,
-    "coins": 418,
+    "coins": 18,
     "gems": 18,
     "savesFaceId": 0,
-    "savesSkinId": 7,
-    "currentPetId": 0,
+    "savesSkinId": 5,
+    "currentPetId": 6,
+    "saveItemId": 1,
     "skinSaves": [
         {
             "id": 1,
@@ -52,6 +53,26 @@
         {
             "id": 103,
             "isPurchase": false
+        },
+        {
+            "id": 105,
+            "isPurchase": false
+        },
+        {
+            "id": 104,
+            "isPurchase": false
+        },
+        {
+            "id": 52,
+            "isPurchase": true
+        },
+        {
+            "id": 51,
+            "isPurchase": true
+        },
+        {
+            "id": 50,
+            "isPurchase": true
         }
     ]
 }

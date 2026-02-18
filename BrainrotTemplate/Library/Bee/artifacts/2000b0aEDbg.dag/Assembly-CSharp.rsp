@@ -110,7 +110,6 @@
 -define:Storage_yg
 -define:PlayerStats_yg
 -define:Leaderboards_yg
--define:Localization_yg
 -define:Metrica_yg
 -define:Review_yg
 -define:StickyAdv_yg
@@ -129,6 +128,7 @@
 -define:Clipboard_yg
 -define:RU_YG2
 -define:Payments_yg
+-define:Localization_yg
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -370,7 +370,10 @@
 "Assets/Bots/NavMeshBotController.cs"
 "Assets/DeviceChecker.cs"
 "Assets/Enemy/EnemyAI.cs"
+"Assets/Events/BallLightning.cs"
 "Assets/Events/BotManager.cs"
+"Assets/Events/ClickerEvent.cs"
+"Assets/Events/ClickerEventSO.cs"
 "Assets/Events/EventManager.cs"
 "Assets/Events/EventsElements/CreationSpawns.cs"
 "Assets/Events/EventsElements/Meteor.cs"
@@ -396,6 +399,13 @@
 "Assets/Player/RobloxStyleController.cs"
 "Assets/Player/SkinSystem.cs"
 "Assets/PlayerStats.cs"
+"Assets/PluginYourGames/Example/Scripts/BasicData.cs"
+"Assets/PluginYourGames/Example/Scripts/CanvasScaleForMobile.cs"
+"Assets/PluginYourGames/Example/Scripts/DebugViewing.cs"
+"Assets/PluginYourGames/Example/Scripts/DemoTextTranslateRU.cs"
+"Assets/PluginYourGames/Example/Scripts/Scenes/AllDemoScenes.cs"
+"Assets/PluginYourGames/Example/Scripts/Scenes/DemoSceneLoadButton.cs"
+"Assets/PluginYourGames/Example/Scripts/Scenes/DemoScenePartial.cs"
 "Assets/PluginYourGames/Modules/Authorization/Scripts/Auth_info.cs"
 "Assets/PluginYourGames/Modules/Authorization/Scripts/Auth_interface.cs"
 "Assets/PluginYourGames/Modules/Authorization/Scripts/Auth_lang.cs"
@@ -448,6 +458,8 @@
 "Assets/PluginYourGames/Modules/Leaderboards/Scripts/LB_yg.cs"
 "Assets/PluginYourGames/Modules/Leaderboards/Scripts/LeaderboardYG.cs"
 "Assets/PluginYourGames/Modules/Leaderboards/Scripts/UtilsLB.cs"
+"Assets/PluginYourGames/Modules/Localization/Example/Scripts/EnvirLangExample.cs"
+"Assets/PluginYourGames/Modules/Localization/Example/Scripts/LanguageExample.cs"
 "Assets/PluginYourGames/Modules/Localization/Scripts/Lang_info.cs"
 "Assets/PluginYourGames/Modules/Localization/Scripts/Lang_interface.cs"
 "Assets/PluginYourGames/Modules/Localization/Scripts/Lang_projectSettings.cs"

@@ -1090,6 +1090,7 @@ struct SavesYG_t690242EAB4C593E9C244E68284769CCC625E95BA  : public RuntimeObject
 	int32_t ___savesFaceId;
 	int32_t ___savesSkinId;
 	int32_t ___currentPetId;
+	int32_t ___saveItemId;
 	List_1_t1374E967EDBD554896E37301560B39D81DFF6E5D* ___skinSaves;
 };
 struct String_t  : public RuntimeObject

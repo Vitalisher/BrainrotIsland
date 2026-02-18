@@ -27,6 +27,7 @@ namespace YG
         public int savesFaceId;
         public int savesSkinId;
         public int currentPetId;
+        public int saveItemId;
 
 
         public List<ItemData> skinSaves = new List<ItemData>();

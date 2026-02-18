@@ -264,8 +264,10 @@ extern void RobloxStyleController_PlayerDisabled_mDDA308A8A87A6D0A04C5B2DDDA562B
 extern void RobloxStyleController_PlayerEnabled_m61D13D1FAE07177B8F7681A7B79C2A0E8C72E2F1 (void);
 extern void RobloxStyleController__ctor_mCCC2C9139E63A54C4A53E7DB0801A852BE973B5E (void);
 extern void Skin__ctor_mA66D959150BFAA52BE44B2CE339305D59CB922D6 (void);
+extern void ItemInstance__ctor_m94180E98AF32FFC697AB0B8BA0D5062F559B9F7C (void);
 extern void SkinSystem_ChangeFace_m7A82AB219CE22EE469A7E0C085981721324F7BE6 (void);
 extern void SkinSystem_ChangeSkinColor_m4F7A5E2F6D172D288422ACACB8EC28A8D0161174 (void);
+extern void SkinSystem_ChangeItem_m068BB169348624489CB3EB33526BCE253C16EB91 (void);
 extern void SkinSystem_InitializeSkin_m44408F94B48B31A8F37181C04636F401960460CD (void);
 extern void SkinSystem__ctor_m1F8DE4A61E8FA0F3EC1E0D325BE1D042431C8B4F (void);
 extern void PlayerStats_Awake_m058292BBEDE0A7A57B305AB0E7C60D459EA2A234 (void);
@@ -1136,7 +1138,7 @@ extern void DemoScenePartial_Awake_mC2F0911F143D1A0582BA49CE2AD4FD3264035813 (vo
 extern void DemoScenePartial_Start_m133035F8D9AC4AD2662DEEEC4219ECBECF5746DF (void);
 extern void DemoScenePartial__ctor_m6A8FF754799A13C45A5E8724018EB28238E68547 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[1133] = 
+static Il2CppMethodPointer s_methodPointers[1135] = 
 {
 	NavMeshBotController_Start_m6EAE4C19D20B7AC7DC9155BB54B23D13101655C3,
 	NavMeshBotController_Update_m1F376F109EBBA9D3ACA86D386144F50089641A5D,
@@ -1398,8 +1400,10 @@ static Il2CppMethodPointer s_methodPointers[1133] =
 	RobloxStyleController_PlayerEnabled_m61D13D1FAE07177B8F7681A7B79C2A0E8C72E2F1,
 	RobloxStyleController__ctor_mCCC2C9139E63A54C4A53E7DB0801A852BE973B5E,
 	Skin__ctor_mA66D959150BFAA52BE44B2CE339305D59CB922D6,
+	ItemInstance__ctor_m94180E98AF32FFC697AB0B8BA0D5062F559B9F7C,
 	SkinSystem_ChangeFace_m7A82AB219CE22EE469A7E0C085981721324F7BE6,
 	SkinSystem_ChangeSkinColor_m4F7A5E2F6D172D288422ACACB8EC28A8D0161174,
+	SkinSystem_ChangeItem_m068BB169348624489CB3EB33526BCE253C16EB91,
 	SkinSystem_InitializeSkin_m44408F94B48B31A8F37181C04636F401960460CD,
 	SkinSystem__ctor_m1F8DE4A61E8FA0F3EC1E0D325BE1D042431C8B4F,
 	PlayerStats_Awake_m058292BBEDE0A7A57B305AB0E7C60D459EA2A234,
@@ -2277,11 +2281,11 @@ extern void U3CSpawnListU3Ed__11_MoveNext_m588DC47B58CEB25FDAD2C7B603473BBE9B096
 extern void U3CSpawnListU3Ed__11_SetStateMachine_m8D9D23643511D93784862BF2494C8615246A85B9_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[3] = 
 {
-	{ 0x06000348, ItemData__ctor_m054BCE8F124D8B78991913014C35D6D524653B9E_AdjustorThunk },
-	{ 0x06000465, U3CSpawnListU3Ed__11_MoveNext_m588DC47B58CEB25FDAD2C7B603473BBE9B096F3F_AdjustorThunk },
-	{ 0x06000466, U3CSpawnListU3Ed__11_SetStateMachine_m8D9D23643511D93784862BF2494C8615246A85B9_AdjustorThunk },
+	{ 0x0600034A, ItemData__ctor_m054BCE8F124D8B78991913014C35D6D524653B9E_AdjustorThunk },
+	{ 0x06000467, U3CSpawnListU3Ed__11_MoveNext_m588DC47B58CEB25FDAD2C7B603473BBE9B096F3F_AdjustorThunk },
+	{ 0x06000468, U3CSpawnListU3Ed__11_SetStateMachine_m8D9D23643511D93784862BF2494C8615246A85B9_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[1133] = 
+static const int32_t s_InvokerIndices[1135] = 
 {
 	4581,
 	4581,
@@ -2543,6 +2547,8 @@ static const int32_t s_InvokerIndices[1133] =
 	4581,
 	4581,
 	4581,
+	4581,
+	3655,
 	3655,
 	3655,
 	4581,
@@ -3419,11 +3425,11 @@ static const int32_t s_InvokerIndices[1133] =
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] = 
 {
-	{ 0x060001F4, 2,  (void**)&YG2_StaticClipboardCallback_m9C1AE7B597811BFB4B7D369D9B8388430F1997E3_RuntimeMethod_var, 0 },
+	{ 0x060001F6, 2,  (void**)&YG2_StaticClipboardCallback_m9C1AE7B597811BFB4B7D369D9B8388430F1997E3_RuntimeMethod_var, 0 },
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x02000098, { 0, 20 } },
+	{ 0x02000099, { 0, 20 } },
 };
 extern const uint32_t g_rgctx_List_1_tA1B9F7A35EB705A8F686847AE2547DC15B786734;
 extern const uint32_t g_rgctx_List_1__ctor_mFCCEC5211F93E0535F5CEE816EF4D7942055E943;
@@ -3472,7 +3478,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1133,
+	1135,
 	s_methodPointers,
 	3,
 	s_adjustorThunks,
